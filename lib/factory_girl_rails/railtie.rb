@@ -1,7 +1,7 @@
 require 'factory_girl'
 require 'rails'
 
-class Factory
+module Factory
   class Railtie < Rails::Railtie
     config.after_initialize do
       Factory.definition_file_paths = [
